@@ -9,9 +9,29 @@
 body {
   font-family: "Abel", Courier, monospace;
   text-transform: uppercase;
-  color: #fa4b23;
-  background: #111;
+  color: #099fff;
+  background: url("https://images8.alphacoders.com/100/thumb-1920-1006608.jpg");
   /* overflow: hidden; */
+}
+
+.glow {
+  font-size: 80px;
+  color: #0062ff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #099fff,
+      0 0 40px #099fff, 0 0 50px #099fff, 0 0 60px #099fff, 0 0 70px #099fff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #00ffff, 0 0 40px #00ffff,
+      0 0 50px #00ffff, 0 0 60px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff;
+  }
 }
 
 .wrapper {
@@ -94,12 +114,12 @@ p {
 }
 
 a {
-  color: #666;
+  color: #099fff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fa4b23;
+  color: #099fff;
 }
 
 .yt {
@@ -113,9 +133,9 @@ a:hover {
 }
 
 button {
-  color: #fa4b23;
+  color: #099fff;
   border: none;
-  background-color: #111;
+  background: inherit;
   font-family: "Holtwood One SC", Arial, sans-serif;
   font-size: 3rem;
   cursor: pointer;
@@ -126,7 +146,7 @@ button {
 .owl {
   font-family: "Source Code Pro", Courier, monospace;
   font-size: 3em;
-  color: #444;
+  color: #fff;
 }
 
 .owl span {
